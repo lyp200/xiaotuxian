@@ -1,4 +1,4 @@
-//import "./assets/main.css";
+//GITimport "./assets/main.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
@@ -9,11 +9,11 @@ import router from "./router";
 //引入初始化样式文件
 import "@/styles/common.scss";
 
-//  接口函数
-import { getCategory } from "@/apis/testAPI";
-getCategory().then((res) => {
-  console.log(res);
-});
+// //  接口函数
+// import { getCategory } from "@/apis/testAPI";
+// getCategory().then((res) => {
+//   console.log(res);
+// });
 
 const app = createApp(App);
 

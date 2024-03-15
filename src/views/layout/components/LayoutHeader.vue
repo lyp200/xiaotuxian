@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="app-header">
+  <header class="app-header" show>
     <div class="container">
       <h1 class="logo">
         <RouterLink to="/">小兔鲜</RouterLink>
