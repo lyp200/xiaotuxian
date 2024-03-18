@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import { defineStore } from "pinia";
+import { defineStore } from "pinia"; //pinia方法
 import { getCategoryAPI } from "@/apis/layout";
 
 export const useCategoryStore = defineStore("category", () => {
