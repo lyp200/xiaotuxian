@@ -23,6 +23,7 @@ defineProps({
       <!-- 主体内容区域 -->
       <slot />
     </div>
+    <!-- 主体内容区域框架结束 -->
   </div>
 </template>
 
