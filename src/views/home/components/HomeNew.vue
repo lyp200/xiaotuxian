@@ -20,7 +20,7 @@ onMounted(() => getNewList()); //获取数据这段代码的作用是在组件�
       <li v-for="item in newList" :key="item.id">
         <RouterLink to="/">
           <!-- 在li元素内部，使用了RouterLink组件来实现路由跳转。to属性指定了跳转的目标路由为"/"。 -->
-          <img :src="item.picture" alt="" />
+          <img alt="" :src="item.picture" />
           <p class="name">{{ item.name }}</p>
           <p class="price">&yen;{{ item.price }}</p>
         </RouterLink>

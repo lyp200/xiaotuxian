@@ -42,3 +42,14 @@ export const getHotAPI = () => {
 // 根据代码的上下文来看，httpInstance可能是一个封装了HTTP请求的工具函数或者是一个Axios实例。根据请求的地址和方法来推测，该函数会发送一个GET请求到home/hot接口，并且不带任何参数。
 
 // 当调用getHotAPI函数时，它会发送一个GET请求到home/hot接口，并返回一个Promise对象。通过这个Promise对象，可以在调用方使用.then()或者await来获取请求的结果。
+
+/**
+ * @description: 获取所有商品模块
+ * @param {*}
+ * @return {*}
+ */
+export const getGoodsAPI = () => {
+  return httpInstance({
+    url: "/home/goods",
+  });
+};
