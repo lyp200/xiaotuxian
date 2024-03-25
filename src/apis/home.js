@@ -24,3 +24,21 @@ export const findNewAPI = () => {
 //当调用findNewAPI函数时，它会发送一个GET请求到/home/new接口，并返回一个Promise对象。通过这个Promise对象，可以在调用方使用.then()或者await来获取请求的结果。
 
 //这段代码的作用是封装了一个获取新数据的API请求函数，可以在其他地方导入并使用它来获取新数据
+//-------------------------------------------------------------------------------------------
+/**
+ * @description: 获取人气推荐
+ * @param {*}
+ * @return {*}
+ */
+export const getHotAPI = () => {
+  return httpInstance({
+    url: "home/hot",
+  });
+};
+// 这段代码导出了一个名为getHotAPI的函数，用于获取人气推荐的数据。
+
+// 该函数使用了一个名为httpInstance的变量来发起HTTP请求。请求的地址为home/hot，请求的方法为GET，请求的参数为空对象{}。
+
+// 根据代码的上下文来看，httpInstance可能是一个封装了HTTP请求的工具函数或者是一个Axios实例。根据请求的地址和方法来推测，该函数会发送一个GET请求到home/hot接口，并且不带任何参数。
+
+// 当调用getHotAPI函数时，它会发送一个GET请求到home/hot接口，并返回一个Promise对象。通过这个Promise对象，可以在调用方使用.then()或者await来获取请求的结果。
